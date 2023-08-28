@@ -78,7 +78,7 @@ header {
     width: 100%;
     height: 500px;
     object-fit: cover;
-    object-position: 60% 57%;
+    object-position: 60% 57%; 
 }
 
 .hero-text {
@@ -95,4 +95,22 @@ header {
 
 .hero-text p {
     padding: 0 100px;
+}
+
+.homepage-card-xl {
+    width: 1098px;
+    height: 300px;
+}
+
+.xl-card-img {
+    width: 1098px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.xl-text-background {
+    background-color: #343434;
+    height: 50px;
+    border-radius: 0px 0 5px 5px;
 }
