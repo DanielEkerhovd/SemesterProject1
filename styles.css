@@ -4,6 +4,9 @@
     font-family: 'Lato', sans-serif;
 }
 
+.bold {
+    font-weight: bold;
+}
 
 body {
     background-color: #1E1E1E;
@@ -11,8 +14,8 @@ body {
 
 
 header {
-    background-color: white;
-    width: 100vw;
+    background-color: #FFFEF8;
+    width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
@@ -25,7 +28,7 @@ header {
     align-items: center;
     height: 100%;
     width: 346px;
-    margin-left: 45px
+    padding-left: 45px
 }
 
 .cc-logo {
@@ -37,9 +40,9 @@ header {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-right: 45px;
+    padding-right: 45px;
     font-size: 20px;
-    font-weight: 4 00;
+    font-weight: 400;
 }
 .nav-items {
     display: flex;
@@ -84,7 +87,7 @@ header {
 .hero-text {
     position: absolute;
     top: 40%;
-    width: 100vw;
+    width: 100%;
     font-size: 4.167vw;
     color: white;
     font-weight: 600;
@@ -97,20 +100,78 @@ header {
     padding: 0 100px;
 }
 
-.homepage-card-xl {
+
+.homepage-content {
+    color: white;
+    font-size: 23px;
+    margin: 64px auto;
     width: 1098px;
-    height: 300px;
 }
 
-.xl-card-img {
-    width: 1098px;
-    height: 300px;
+.card-gap {
+    margin-bottom: 52px;
+}
+
+.hp-card-img {
     object-fit: cover;
     border-radius: 5px 5px 0 0;
+    display: block;
+    height: 250px;
 }
 
-.xl-text-background {
+.hp-card-backg {
     background-color: #343434;
     height: 50px;
     border-radius: 0px 0 5px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.s-img, .s-card {
+    width: 255px;
+    justify-content: center;
+}
+
+.m-img, .m-card {
+    width: 536px ;
+}
+
+.xl-img, .xl-card {
+    width: 1098px;
+}
+.card-indent {
+    margin-left: 19px;
+}
+
+.homepage-card-s-s-m, .homepage-card-m-m {
+    display: flex;
+    gap: 26px;
+}
+
+footer {
+    background-color: #FFFEF8;
+    height: 200px;
+    width: 100%;
+}
+
+.footer-content {
+    width: 1098px;
+    height: 100%;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 341px;
+}
+
+.SoMe {
+    display: flex;
+    gap: 24px
+}
+.SoMe-icon {
+    width: 40px;
+    height: 40px;
 }
