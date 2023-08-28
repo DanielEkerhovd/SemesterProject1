@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+body {
+    background-color: #1E1E1E;
+}
+
+
+header {
+    background-color: white;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    width: 346px;
+    margin-left: 45px
+}
+
+.cc-logo {
+    height: 71px;
+    width: 346px;
+    object-fit: cover; 
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 45px;
+    font-size: 20px;
+    font-weight: 4 00;
+}
+.nav-items {
+    display: flex;
+    gap: 40px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: black;
+}
+.nav-items li {
+    list-style: none;
+}
+
+
+.tickets-button {
+    width: 167px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DF7861;
+    cursor: pointer;
+}
+
+.tickets-button:active {
+    background-color: #ECB390;
+}
+
+.hero {
+    position: relative;
+    align-items: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 60% 57%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    width: 100vw;
+    font-size: 4.167vw;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text p {
+    padding: 0 100px;
+}
