@@ -13,6 +13,13 @@ body {
 }
 
 
+
+
+
+
+
+/* HEADER */
+
 header {
     background-color: #FFFEF8;
     width: 100%;
@@ -71,6 +78,41 @@ header {
 .tickets-button:active {
     background-color: #ECB390;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hero {
     position: relative;
@@ -147,6 +189,29 @@ header {
     display: flex;
     gap: 26px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
 
 footer {
     background-color: #FFFEF8;
