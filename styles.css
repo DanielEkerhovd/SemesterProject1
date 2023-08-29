@@ -148,6 +148,8 @@ header {
     font-size: 23px;
     margin: 64px auto;
     width: 1098px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-gap {
@@ -187,6 +189,7 @@ header {
 
 .homepage-card-s-s-m, .homepage-card-m-m {
     display: flex;
+    justify-content: space-between;
     gap: 26px;
 }
 
@@ -239,4 +242,121 @@ footer {
 .SoMe-icon {
     width: 40px;
     height: 40px;
+}
+
+
+
+
+
+
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1199px) {
+
+
+
+
+    .cc-logo {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .header-nav {
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .s-img, .s-card {
+        justify-content: center;
+        width: 181px
+    }
+    
+    .m-img, .m-card {
+        width: 387px;
+        justify-content: center;
+    }
+    
+    .xl-img, .xl-card {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .homepage-content {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .homepage-card-s-s-m, .homepage-card-m-m {
+        width: 800px;
+        justify-content: space-between
+    }
+
+    .homepage-card-m-m {
+    }
+
+    .hide-1199 {
+        display: none;
+    }
+
+    .footer-content {
+        width: 800px;
+    }
+}
+
+@media (max-width: 1131px) {
+    .header-logo, .header-nav  {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 869px) {
+    
+    .homepage-card-s {
+        display: none;
+    }
+    
+    .m-img, .m-card {
+        width: 500px;
+        justify-content: center;
+    }
+    
+    .xl-img, .xl-card {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .homepage-card-s-s-m {
+        width: 500px;
+    }
+    .homepage-card-m-m {
+        width: 500px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card-gap {
+        gap: 0;;
+    }
+
+    .footer-content {
+        width: 500px;
+    }
+    
+    .footer-logo {
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+
 }
