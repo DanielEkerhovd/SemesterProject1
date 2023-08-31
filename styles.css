@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    text-decoration: none;
 }
 
 .bold {
@@ -13,7 +14,13 @@ body {
 }
 
 
+a:visited {
+    color: white;
+}
 
+.phone-version {
+    display: none;
+}
 
 
 
@@ -31,7 +38,7 @@ header {
 
 .header-logo {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     height: 100%;
     width: 346px;
@@ -57,7 +64,6 @@ header {
 }
 
 .header-nav a {
-    text-decoration: none;
     color: black;
 }
 .nav-items li {
@@ -79,6 +85,15 @@ header {
     background-color: #ECB390;
 }
 
+.hamburger-menu {
+    width: 37px;
+    height: 37px;
+    display: none;
+}
+
+.header-1199 {
+    display: none;
+}
 
 
 
@@ -129,17 +144,17 @@ header {
 .hero-text {
     position: absolute;
     top: 40%;
-    width: 100%;
+    left: 5%;
+    width: 90vw;
     font-size: 4.167vw;
     color: white;
     font-weight: 600;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    white-space: nowrap;
 }
 
 .hero-text p {
-    padding: 0 100px;
 }
 
 
@@ -232,7 +247,8 @@ footer {
 }
 
 .footer-logo {
-    width: 341px;
+    width: 250px;
+    height: 50px;
 }
 
 .SoMe {
@@ -268,15 +284,6 @@ footer {
     }
 
 
-
-
-
-
-
-
-
-
-
     .s-img, .s-card {
         justify-content: center;
         width: 181px
@@ -299,11 +306,9 @@ footer {
     }
     .homepage-card-s-s-m, .homepage-card-m-m {
         width: 800px;
-        justify-content: space-between
+        justify-content: space-between;
     }
 
-    .homepage-card-m-m {
-    }
 
     .hide-1199 {
         display: none;
@@ -321,10 +326,43 @@ footer {
 }
 
 @media (max-width: 869px) {
+
+
+
+
+    .hero-img {
+        height: 300px;
+    }
     
+    .tickets-button {
+        width: 500px;
+    }
+
+    .homepage-content  {
+        margin: 52px auto;
+    }
+
+    .hp-card-backg {
+        justify-content: center;
+    }
+
     .homepage-card-s {
         display: none;
     }
+    
+    .homepage-card-s-s-m {
+        width: 500px;
+    }
+    .homepage-card-m-m {
+        width: 500px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 52px;
+    }
+    .card-indent {
+        margin: 0;
+    }
+
     
     .m-img, .m-card {
         width: 500px;
@@ -336,19 +374,8 @@ footer {
         margin: 0 auto;
     }
 
-    .homepage-card-s-s-m {
-        width: 500px;
-    }
-    .homepage-card-m-m {
-        width: 500px;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .card-gap {
-        gap: 0;;
-    }
-
+    
+    
     .footer-content {
         width: 500px;
     }
@@ -359,4 +386,128 @@ footer {
         max-width: 250px;
     }
 
+    .SoMe-icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .phone-version {
+        display: block;
+    }
+
+    .desktop-version {
+        display: none;
+    }
+
 }
+
+@media (max-width: 749px) {
+
+
+    header {
+        height: 84px;
+    }
+
+    .header-logo {
+        width: 259px;
+    }
+
+    .cc-logo {
+        max-height: 54px;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    footer {
+        height: 84px;
+    }
+}
+
+@media (max-width: 599px) {
+    .hero-img {
+        height: 196px;
+    }
+
+    .tickets {
+        margin-bottom: 22px;
+    }
+
+    .homepage-card-m-m {
+        gap: 30px;
+    }
+
+    .homepage-content div, .homepage-content button, .homepage-content img {
+        width: 80vw;
+    }
+
+    .homepage-content img {
+        height: 90px;
+    }
+
+    .hp-card-backg p {
+        font-size: 17px;
+    }
+
+    .hp-card-backg {
+        height: 35px;
+    }
+
+    .card-gap {
+        margin-bottom: 30px;
+    }
+
+    .footer-content {
+        width: 90%;
+    }
+
+    .footer-logo {
+        width: 200px;
+        height: 40px;
+    }
+
+    .SoMe {
+        gap: 15px;
+    }
+
+    .SoMe-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    
+}
+
+@media (max-width: 439px) {
+    .remove-439 {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .remove-400 {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 339px) {
+    .remove-339 {
+        display: none;
+    }
+
+    .footer-content {
+        justify-content: center;
+    }
+
+    .SoMe {
+        display: block
+    }
+}
+   
