@@ -1,0 +1,69 @@
+/* HEADER */
+
+header {
+    background-color: #FFFEF8;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 346px;
+    padding-left: 45px
+}
+
+.cc-logo {
+    height: 71px;
+    width: 346px;
+    object-fit: cover; 
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 45px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.nav-items {
+    display: flex;
+    gap: 40px;
+}
+
+.header-nav a {
+    color: black;
+}
+.nav-items li {
+    list-style: none;
+}
+
+
+.tickets-button {
+    width: 167px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DF7861;
+    cursor: pointer;
+}
+
+.tickets-button:active {
+    background-color: #ECB390;
+}
+
+.hamburger-menu {
+    width: 37px;
+    height: 37px;
+    display: none;
+}
+
+.header-1199 {
+    display: none;
+}

@@ -1,0 +1,30 @@
+/* FOOTER */
+
+footer {
+    background-color: #FFFEF8;
+    height: 200px;
+    width: 100%;
+}
+
+.footer-content {
+    width: 1098px;
+    height: 100%;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 250px;
+    height: 50px;
+}
+
+.SoMe {
+    display: flex;
+    gap: 24px
+}
+.SoMe-icon {
+    width: 40px;
+    height: 40px;
+}
