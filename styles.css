@@ -267,9 +267,27 @@ p {
     .exhibit-template  {
         width: 400px;
     }
+
+    .exhibit-title {
+        max-width: 864px;
+    }
+
+    .highlight-exhibit div {
+        width: 80%;
+    }
+
+    .highlight-exhibit img {
+        width: 100%;
+        object-fit: cover;
+    }
     
 
-
+    .highlight-exhibit {
+        width: 864px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
 
 
     .exhibit-img {
@@ -347,12 +365,22 @@ p {
 }
 
 @media (max-width: 1079px) {
-    .exhibit-template {
+    .exhibit-template, .highlight-exhibit {
         width: 80vw;
     }
 
     .exhibit-img {
         height: 200px;
+    }
+
+    .highlight-content p {
+        max-width: 489px;
+        width: 80%;
+        
+    }
+
+    .divider {
+        min-width: 370px;
     }
 
     .exhibit-template p {
@@ -372,6 +400,7 @@ p {
     
     .tickets-button {
         width: 500px;
+        height: 60px;
     }
 
     .homepage-content  {
@@ -466,12 +495,15 @@ p {
 }
 
 @media (max-width: 599px) {
+
+
+    
     .hero-img {
         height: 196px;
     }
 
-    .tickets {
-        margin-bottom: 22px;
+    .homepage-content {
+        margin: 30px auto 50px;
     }
 
     .homepage-card-m-m {
@@ -483,7 +515,7 @@ p {
     }
 
     .homepage-content img {
-        height: 90px;
+        height: 150px;
     }
 
     .hp-card-backg p {
