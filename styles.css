@@ -643,26 +643,26 @@
     /* EXHIBIT TEMPLATE */
 
     .exhibit-content-main h1 {
-        font-size: 6vw;
+        font-size: 6.3vw;
         white-space: nowrap;
         letter-spacing: 0;
     }
 
     .title-p {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
 
     .content-section-text h2 {
-        font-size: 4vw;
+        font-size: 5.3vw;
         
     }
 
     .content-section-text p {
-        font-size: 3.3vw;
+        font-size: 4vw;
     }
 
     .content-section-img {
-        height: 100px;
+        height: 150px;
     }
 
     
