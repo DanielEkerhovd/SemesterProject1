@@ -255,6 +255,10 @@
 
 }
 
+.img-flip {
+    flex-direction: row-reverse;
+}
+
 
 
 
@@ -300,6 +304,7 @@
 
     .highlight-img {
         width: 100%;
+        max-height: 450px;
         object-fit: cover;
     }
     
@@ -360,6 +365,52 @@
         justify-content: space-between;
     }
 
+
+    /*EXHIBIT TEMPLATE 1199px*/
+
+    .exhibit-template-content {
+        width: 600px;
+        color: white;
+        margin: 64px auto;
+    }
+
+    .exhibit-content-main, .exhibit-content-info {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exhibit-content-info {
+        gap: 100px;
+    }
+
+    .content-section, .img-flip {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .exhibit-content-main h1 {
+        font-size: 36px;
+    }
+
+    .title-p {
+        font-size: 23px;
+        width: 100%;
+    }
+
+    .content-section-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .content-section-text {
+        gap: 30px;
+    }
+
+    .align-right {
+        text-align: start;
+        align-items: start;
+    }
 
     .hide-1199 {
         display: none;
@@ -511,6 +562,32 @@
         display: none;
     }
 
+
+
+    /* EXHIBITS 749px */
+
+    .exhibit-hero {
+        height: 200px;
+    }
+
+    .exhibit-content-main, .exhibit-content-info, .exhibit-template-content {
+        width: 80vw;
+    }
+
+    .exhibit-content-main {
+        margin-bottom: 50px;
+    }
+
+    .exhibit-content-info {
+        gap: 70px;
+    }
+
+    .exhibit-content-main h1 {
+
+        letter-spacing: 0;
+    }
+
+
     footer {
         height: 84px;
     }
@@ -570,7 +647,30 @@
         height: 35px;
     }
 
-    /* EXHIBITS */
+    /* EXHIBIT TEMPLATE */
+
+    .exhibit-content-main h1 {
+        font-size: 6vw;
+        white-space: nowrap;
+        letter-spacing: 0;
+    }
+
+    .title-p {
+        font-size: 3.5vw;
+    }
+
+    .content-section-text h2 {
+        font-size: 4vw;
+        
+    }
+
+    .content-section-text p {
+        font-size: 3.3vw;
+    }
+
+    .content-section-img {
+        height: 100px;
+    }
 
     
 }
