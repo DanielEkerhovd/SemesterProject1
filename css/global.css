@@ -25,6 +25,10 @@ p {
     font-size: 22px;
 }
 
+button {
+    color: black;
+}
+
 .title-p {
     font-size: 25px;
     width: 90%;
@@ -37,6 +41,13 @@ img {
 
 .divider {
     width: 90%;
+    height: 2px;
+    border-radius: 10px;
+    background: #ECDFC8;
+}
+
+.divider-small {
+    width: 80%;
     height: 2px;
     border-radius: 10px;
     background: #ECDFC8;
