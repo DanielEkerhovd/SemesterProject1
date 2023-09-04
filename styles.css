@@ -37,8 +37,6 @@
     white-space: nowrap;
 }
 
-
-
 .homepage-content {
     color: white;
     font-size: 23px;
@@ -334,11 +332,6 @@
         height: auto;
         max-width: 400px;
     }
-
-    .header-nav {
-        
-    }
-
 
     .s-img, .s-card {
         justify-content: center;
