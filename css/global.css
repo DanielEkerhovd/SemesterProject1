@@ -15,7 +15,7 @@ body {
 }
 
 
-a:visited {
+a:visited, button:visited {
     color: inherit;
 }
 
