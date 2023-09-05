@@ -260,8 +260,39 @@
 }
 
 
+/*ABOUT*/
 
+.about-content {
+    width: 895px;
+    margin: 0 auto;
+}
 
+.about-content h1 {
+    letter-spacing: 7.837px;
+}
+
+.about-title-p {
+    margin-bottom: 50px;
+}
+
+.about-divider {
+    margin-bottom: 50px;
+}
+
+.about-goals {
+margin-bottom: 100px;
+display: flex;
+flex-direction: column;
+gap: 50px;
+}
+
+.about-goals h2 {
+    font-size: 30px;
+}
+
+.about-content h3 {
+    font-size: 22px;
+}
 
 
 

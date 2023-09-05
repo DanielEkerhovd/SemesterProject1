@@ -25,6 +25,14 @@ p {
     font-size: 22px;
 }
 
+.px20{
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
 button {
     color: black;
 }
