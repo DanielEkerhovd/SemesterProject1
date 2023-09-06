@@ -3,10 +3,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url(/css/global.css);
-@import url(/CSS/header.css);
-@import url(/CSS/footer.css);
+@import url(/css/header.css);
+@import url(/css/footer.css);
 
-
+:root {
+    --event-west-width: 306px;
+    --border-radius: 5px;
+}
 
 
 /* HOMEPAGE */
@@ -138,7 +141,7 @@
 .button-seemore {
     height: 50px;
     width: 219px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     border: 0;
     background: #ECDFC8;
     font-size: 20px;
@@ -176,7 +179,7 @@
 .exhibit-img {
     width: 100%;
     height: 202px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 
@@ -246,7 +249,7 @@
 
 .information-img {
     width: 324px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 .back-button p {
@@ -297,27 +300,157 @@ gap: 50px;
 
 
 
+/* EVENTS */
+
+
+.etc-width {
+    width: 1097px;
+    margin: 0 auto;
+}
+
+.events-title {
+    font-size: 70px;
+    margin: 64px auto 0;
+}
+
+.events-content {
+    width: 100%;
+    margin: 44px 0 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.events-west {
+    width: var(--event-west-width);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 49px;
+}
+
+.calendar {
+    width: 100%;
+    height: 330px;
+    margin-bottom: 12px;
+    background-color: #FFFEF8;
+    border-radius: var(--border-radius);
+}
+
+.calendar-button {
+    width: 100%;
+    height: 47px;
+    background-color: #FFFEF8;
+    columns: black;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+.hours {
+    width: var(--event-west-width);
+    height: 228px;
+    background-color: #FFFEF8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 17px;
+    border-radius: var(--border-radius);
+
+}
+.hours h3 {
+    color: black;
+}
+.open-hours p {
+    color: black;
+}
 
 
 
+.events-east {
+    width: 589px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 79px;
+}
+
+.event-today, .event-week {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+}
+
+.event-week-title {
+    letter-spacing: 3px;
+}
+
+.event-card {
+    width: 100%;
+    height: 117px;
+    background-color: #343434;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event-img {
+    height: 100%;
+    width: 175px;
+    border-radius: 5px 0 0 5px;
+}
+
+.event-name {
+    width: 150px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.event-card-time {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 171px;
+
+}
+
+.divider-vertical {
+    height: 80%;
+    width: 2px;
+    background-color: #ECDFC8;
+    border-radius: 10px;
+}
+
+.event-time {
+    margin-left: 50px;
+    width: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    gap: 4px;
+}
+
+
+.event-time-day, .event-time-hour {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.event-time-hour {
+    font-weight: 400;
+}
+.event-time-duration {
+    font-weight: 300;
+    font-size: 13px;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* RESPONSIVENESS */
 
 .phone-version {
     display: none;
@@ -351,6 +484,10 @@ gap: 50px;
     .exhibits {
         justify-content: center;
         gap: 64px;
+    }
+
+    .etc-width {
+        width: 80vw;
     }
 }
 
@@ -435,6 +572,18 @@ gap: 50px;
         gap: 30px;
     }
 
+    .events-east {
+        width: 500px;
+    }
+
+    .event-card-time {
+        width: 130px;
+    }
+
+    .event-time {
+        margin-left: 25px;
+    }
+
     .align-right {
         text-align: start;
         align-items: start;
@@ -472,6 +621,53 @@ gap: 50px;
         width: 80%;
         max-width: 400px;
     } 
+
+
+
+
+    .events-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events-west {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .events-east {
+
+    }
+
+    .hours {
+        height: 389px;
+    }
+
+    .calendar {
+        width: 545px;
+    }
+
+    .events-east {
+        width: 100%;
+    }
+
+
+
+}
+
+@media (max-width: 919px) {
+    .hours {
+        display: none;
+    }
+
+
+
+    .events-calendar, .calendar {
+        width: 100%;
+    }
 }
 
 @media (max-width: 869px) {
