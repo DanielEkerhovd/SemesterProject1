@@ -19,6 +19,10 @@ a:visited, button:visited {
     color: inherit;
 }
 
+h3 {
+    font-size: 22px;
+}
+
 p {
     font-weight: 300;
     color: white;
