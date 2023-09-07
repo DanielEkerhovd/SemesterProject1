@@ -7,8 +7,17 @@
 @import url(/css/footer.css);
 
 :root {
+
+    /* COLORS */
+    --light-background-color:#FFFEF8;
+    --dark-background-color: #343434;
+
+    /* WIDTHS */
+
     --event-west-width: 306px;
     --border-radius: 5px;
+
+
 }
 
 
@@ -61,7 +70,7 @@
 }
 
 .hp-card-backg {
-    background-color: #343434;
+    background-color: var(--dark-background-color);
     height: 50px;
     border-radius: 0px 0 5px 5px;
     display: flex;
@@ -145,7 +154,6 @@
     border: 0;
     background: #ECDFC8;
     font-size: 20px;
-    cursor: pointer;
 }
 
 .button-seemore:active {
@@ -309,6 +317,7 @@ gap: 50px;
 }
 
 .events-title {
+    width: 100%;
     font-size: 70px;
     margin: 64px auto 0;
 }
@@ -332,14 +341,62 @@ gap: 50px;
     width: 100%;
     height: 330px;
     margin-bottom: 12px;
-    background-color: #FFFEF8;
+    background-color: var(--light-background-color);
     border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-phone {
+    width: 80vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.week-display {
+    background-color: var(--light-background-color);
+    border-radius: var(--border-radius);
+    height: 100%;
+    width: 100%;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.week-display h3, .calendar-button {
+    color: black;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.week-button {
+    width: 200px;
+    height: 100%;
+    background-color: var(--light-background-color);
+    border-radius: var(--border-radius);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.calendar-phone img {
+    height: 30px;
+    width: 30px;
 }
 
 .calendar-button {
     width: 100%;
-    height: 47px;
-    background-color: #FFFEF8;
+    height: 60px;
+    font-size: 20px;
+    background-color: var(--light-background-color);
     columns: black;
     border: none;
     border-radius: var(--border-radius);
@@ -348,7 +405,7 @@ gap: 50px;
 .hours {
     width: var(--event-west-width);
     height: 228px;
-    background-color: #FFFEF8;
+    background-color: var(--light-background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -390,7 +447,7 @@ gap: 50px;
 .event-card {
     width: 100%;
     height: 117px;
-    background-color: #343434;
+    background-color: var(--dark-background-color);
     border-radius: var(--border-radius);
     display: flex;
     align-items: center;
@@ -404,10 +461,18 @@ gap: 50px;
 }
 
 .event-name {
-    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.event-name p {
     font-weight: 500;
     letter-spacing: 2px;
     text-align: center;
+
 }
 
 .event-card-time {
@@ -450,6 +515,11 @@ gap: 50px;
 }
 
 
+.calendar-phone {
+    display: none;
+}
+
+
 
 
 .phone-version {
@@ -464,6 +534,10 @@ gap: 50px;
 
     .page-title {
         max-width: 864px;
+    }
+
+    .events-title {
+        max-width: 100%;
     }
 
 
@@ -622,9 +696,6 @@ gap: 50px;
         max-width: 400px;
     } 
 
-
-
-
     .events-content {
         flex-direction: column;
         align-items: center;
@@ -643,7 +714,7 @@ gap: 50px;
     }
 
     .hours {
-        height: 389px;
+        height: 402px;
     }
 
     .calendar {
@@ -652,6 +723,16 @@ gap: 50px;
 
     .events-east {
         width: 100%;
+    }
+
+    .event-img {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .event-name {
+       width: 300px;
+       margin: 0;
     }
 
 
@@ -663,7 +744,13 @@ gap: 50px;
         display: none;
     }
 
+    .events-title {
+        text-align: center;
+    }
 
+    .events-content {
+        margin: 0 auto 64px;;
+    }
 
     .events-calendar, .calendar {
         width: 100%;
@@ -786,6 +873,10 @@ gap: 50px;
         display: none;
     }
 
+    .event-img {
+        max-width: 150px;
+    }
+
 
 
     /* EXHIBITS 749px */
@@ -812,6 +903,16 @@ gap: 50px;
 
     .divider {
         width: 100%;
+    }
+
+
+
+    .calendar-phone {
+        display: flex;
+    }
+
+    .calendar {
+        display: none;
     }
 
 
@@ -864,6 +965,10 @@ gap: 50px;
         width: 100%;
     }
 
+    .event-img {
+        width: 120px;
+    }
+
     .footer-content {
         width: 90%;
     }
@@ -907,6 +1012,44 @@ gap: 50px;
         height: 150px;
     }
 
+    .event-img {
+        display: none;
+    }
+
+    .event-time {
+        margin-left: 10px;
+    }
+
+    .event-card-time {
+        width: 100px;
+    }
+
+    .event-card {
+        background-color: transparent;
+    }
+
+    .event-today .event-card {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.829)), url(Images/Vilvite/vr-paint.jpg);
+        background-size: cover;
+        
+    }  
+    .event-week .event-card:nth-child(2) {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.829)), url(Images/scienceteens.jpg);
+        background-size: cover;;
+    }
+    .event-week .event-card:nth-child(3) {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.829)), url(Images/Vilvite/vilvite-workshop.jpg);
+        background-size: cover;;
+    }
+    .event-week .event-card:nth-child(4) {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.829)), url(Images/Vilvite/vilvite-ekspriment.jpg);
+        background-size: cover;;
+    }
+
     
 }
 
@@ -915,8 +1058,13 @@ gap: 50px;
         display: none;
     }
     
+    
     .page-title {
         font-size: 10vw;
+    }
+
+    .events-title {
+        font-size: 53px;
     }
 
     .exhibit-content p {

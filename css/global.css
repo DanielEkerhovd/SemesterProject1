@@ -39,6 +39,7 @@ h1, h2, h3 {
 
 button {
     color: black;
+    cursor: pointer;
 }
 
 .title-p {
@@ -75,4 +76,8 @@ img {
 .align-right {
     text-align: end;
     align-items: end;
+}
+
+.flip {
+    transform: scaleX(-1);
 }

@@ -1,7 +1,7 @@
 /* FOOTER */
 
 footer {
-    background-color: #FFFEF8;
+    background-color: var(--light-background-color);
     height: 200px;
     width: 100%;
 }
