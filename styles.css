@@ -12,6 +12,11 @@
     --light-background-color:#FFFEF8;
     --dark-background-color: #343434;
 
+    --img-gradient: rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.829);
+    --img-hero-gradient: rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.35);
+
     /* WIDTHS */
 
     --event-west-width: 306px;
@@ -32,8 +37,10 @@
 .hero-img {
     width: 100%;
     height: 380px;
-    object-fit: cover;
-    object-position: 60% 57%; 
+    background-image: linear-gradient(var(--img-hero-gradient)), url(Images/kid-in-museum.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .hero-text {
@@ -447,17 +454,35 @@ gap: 50px;
 .event-card {
     width: 100%;
     height: 117px;
-    background-color: var(--dark-background-color);
     border-radius: var(--border-radius);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
-.event-img {
-    height: 100%;
-    width: 175px;
-    border-radius: 5px 0 0 5px;
+.event-card {
+    background-size: cover;
+}
+
+.event-today .event-card {
+    background-image: linear-gradient(var(--img-gradient)), url(Images/Vilvite/vr-paint.jpg);
+    background-position: 50% 15%;
+}  
+.event-week .event-card:nth-child(2) {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.829)), url(Images/scienceteens.jpg);
+    background-position: 50% 70%;
+}
+.event-week .event-card:nth-child(3) {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.829)), url(Images/Vilvite/vilvite-workshop.jpg);
+    background-position: 50% 30%;
+}
+.event-week .event-card:nth-child(4) {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.829)), url(Images/Vilvite/vilvite-ekspriment.jpg);
+    background-position: 50% 30%;
 }
 
 .event-name {
@@ -465,13 +490,15 @@ gap: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 auto;
 }
 
 .event-name p {
     font-weight: 500;
     letter-spacing: 2px;
     text-align: center;
+    padding: 0 10px;
+    font-size: 23px;
 
 }
 
@@ -650,14 +677,6 @@ gap: 50px;
         width: 500px;
     }
 
-    .event-card-time {
-        width: 130px;
-    }
-
-    .event-time {
-        margin-left: 25px;
-    }
-
     .align-right {
         text-align: start;
         align-items: start;
@@ -725,15 +744,12 @@ gap: 50px;
         width: 100%;
     }
 
-    .event-img {
+    . {
         width: 100%;
         max-width: 260px;
     }
 
-    .event-name {
-       width: 300px;
-       margin: 0;
-    }
+   
 
 
 
@@ -873,7 +889,7 @@ gap: 50px;
         display: none;
     }
 
-    .event-img {
+    . {
         max-width: 150px;
     }
 
@@ -965,8 +981,12 @@ gap: 50px;
         width: 100%;
     }
 
-    .event-img {
-        width: 120px;
+    .event-card-time {
+        width: 100px;
+    }
+
+    .event-time {
+        margin-left: 10px;
     }
 
     .footer-content {
@@ -1011,46 +1031,6 @@ gap: 50px;
     .information-img {
         height: 150px;
     }
-
-    .event-img {
-        display: none;
-    }
-
-    .event-time {
-        margin-left: 10px;
-    }
-
-    .event-card-time {
-        width: 100px;
-    }
-
-    .event-card {
-        background-color: transparent;
-    }
-
-    .event-today .event-card {
-        background-image: linear-gradient(rgb(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.829)), url(Images/Vilvite/vr-paint.jpg);
-        background-size: cover;
-        
-    }  
-    .event-week .event-card:nth-child(2) {
-        background-image: linear-gradient(rgb(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.829)), url(Images/scienceteens.jpg);
-        background-size: cover;;
-    }
-    .event-week .event-card:nth-child(3) {
-        background-image: linear-gradient(rgb(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.829)), url(Images/Vilvite/vilvite-workshop.jpg);
-        background-size: cover;;
-    }
-    .event-week .event-card:nth-child(4) {
-        background-image: linear-gradient(rgb(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.829)), url(Images/Vilvite/vilvite-ekspriment.jpg);
-        background-size: cover;;
-    }
-
-    
 }
 
 @media (max-width: 444px) {
