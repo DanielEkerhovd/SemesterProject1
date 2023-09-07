@@ -12,8 +12,8 @@
     --light-background-color:#FFFEF8;
     --dark-background-color: #343434;
 
-    --img-gradient: rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.829);
+    --img-gradient: rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.75);
     --img-hero-gradient: rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.35);
 
@@ -427,6 +427,7 @@ gap: 50px;
 }
 .open-hours p {
     color: black;
+    font-size: 20px;
 }
 
 
@@ -470,18 +471,15 @@ gap: 50px;
     background-position: 50% 15%;
 }  
 .event-week .event-card:nth-child(2) {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.829)), url(Images/scienceteens.jpg);
+    background-image: linear-gradient(var(--img-gradient)), url(Images/scienceteens.jpg);
     background-position: 50% 70%;
 }
 .event-week .event-card:nth-child(3) {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.829)), url(Images/Vilvite/vilvite-workshop.jpg);
+    background-image: linear-gradient(var(--img-gradient)), url(Images/Vilvite/vilvite-workshop.jpg);
     background-position: 50% 30%;
 }
 .event-week .event-card:nth-child(4) {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.829)), url(Images/Vilvite/vilvite-ekspriment.jpg);
+    background-image: linear-gradient(var(--img-gradient)), url(Images/Vilvite/vilvite-ekspriment.jpg);
     background-position: 50% 30%;
 }
 
