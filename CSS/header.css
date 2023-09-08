@@ -50,7 +50,7 @@ header {
     font-size: 20px;
     border: none;
     border-radius: var(--border-radius);
-    background-color: #DF7861;
+    background-color: var(--button-red)
 }
 
 .tickets-button:active {
