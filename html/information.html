@@ -12,30 +12,71 @@
 </head>
     <body>
         <header>
-            <div class="header-logo">
-                <a href="/index.html"><img class="cc-logo" src="/Images/Icons/Logo.png" alt="Curiosity Center Logo"></a>
+            <div class="header-main-content">
+                <div class="header-logo">
+                    <a href="/index.html"><img class="cc-logo" src="/Images/Icons/Logo.png" alt="Curiosity Center Logo"></a>
+                </div>
+                <nav class="header-nav">
+                    <ul class="nav-items">
+                        <li><a href="/html/exhibits.html">Exhibits</a></li>
+                        <li><a href="/html/events.html">Events</a></li>
+                        <li><a href="/html/information.html">Information</a></li>
+                        <li><a href="/html/about.html">About</a></li>
+                    </ul>
+                <button class="tickets-button desktop-version" onclick="location.href='/html/tickets.html'" type="button">Tickets</button> 
+                </nav>
             </div>
-            <nav class="header-nav">
-               <ul class="nav-items">
-                <li><a href="/html/exhibits.html">Exhibits</a></li>
-                <li><a href="/html/events.html">Events</a></li>
-                <li><a href="/html/information.html">Information</a></li>
-                <li><a href="/html/about.html">About</a></li>
-               </ul>
-               <button class="tickets-button desktop-version" onclick="location.href='/html/tickets.html'" type="button">Tickets</button> 
-               <img class="hamburger-menu" src="/Images/Icons/hamburger-menu.png" alt=""> 
-            </nav>
+            <div class="hamburger-menu">
+                <input type="checkbox" name="hamburger" id="hamburger">
+                <label class="hamburger-label" for="hamburger"><img class="hamburger-icon" src="/Images/Icons/hamburger-menu.png" alt=""></label>
+                <nav class="hamburger-items">
+                    <ul class="hamburger-item-list">
+                        <a href="/html/exhibits.html"><li>EXHIBITS</li></a>
+                        <a href="/html/events.html"><li>EVENTS</li></a>
+                        <a href="/html/information.html"><li>INFORMATION</li></a>
+                        <a href="/html/about.html"><li>ABOUT</li></a>
+                        <a href="/html/tickets.html"><li>TICKETS</li></a>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <main class="information-main">
-            <h1 class="page-title info-width">INFORMATION</h1>
+            <h1 class="page-title info-width info-title">INFORMATION</h1>
             <div class="information-section info-width">
                 
+                
+                <section class="info-west">
+                    <div class="info-cards">
+                        <div class="info-content admission">
+                            <h2>ADMISSION</h2>
+                            <p>Check availability and purchase tickets here:</p>
+                            <button class="ticket-button info-button" onclick="location.href='/html/tickets.html'" type="button">Tickets</button>
+                        </div>
+                        <div class="info-content accessibility">
+                            <h2>ACCESSIBILITY</h2>
+                            <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
+                            </p>
+                        </div>
+                        <div class="info-content shop">
+                            <h2>SHOP</h2>
+                            <p>Our store is located on the 1st floor, on the left of the entrance. It has a variety of science toys and experiments.
+                            </p>
+                        </div>
+                        <div class="info-content hire">
+                            <h2>WE'RE HIRING</h2>
+                            <p>Check our our hiring page for more info:</p>
+                            <button class="hire-button info-button">Hiring</button>
+                        </div>
+                    </div>
+                </section>
                 <section class="info-east">
                     <div class="info-visit-contact">
                         <div class="info-visit">
                             <h2>VISIT</h2>
-                            <p><span class="bold">Museumsgata  32</span><br>4007, Stavanger<br>Norway</p>
+                            <div class="adress-link">
+                                <a class="inline-block" href="https://goo.gl/maps/27L5eW1kSYhYc9HV7" target="_blank"><p><span class="bold">Museumsgata  32</span><br>4007, Stavanger<br>Norway</p></a>
+                            </div>
                         </div>
                         <div class="info-contact">
                             <h2>CONTACT</h2>
@@ -59,30 +100,6 @@
                         <div class="open-hours">
                             <p class="bold">Sat - Sun</p>
                             <p><time>12:00</time> - <time>19:00</time></p>
-                        </div>
-                    </div>
-                </section>
-                <section class="info-west">
-                    <div class="info-cards">
-                        <div class="info-content admission">
-                            <h2>ADMISSION</h2>
-                            <p>Check availability and purchase tickets here:</p>
-                            <button class="ticket-button info-button" onclick="location.href='/html/tickets.html'" type="button">Tickets</button>
-                        </div>
-                        <div class="info-content accessibility">
-                            <h2>ACCESSIBILITY</h2>
-                            <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
-                            </p>
-                        </div>
-                        <div class="info-content shop">
-                            <h2>SHOP</h2>
-                            <p>Our store is located on the 1st floor, on the left of the entrance. It has a variety of science toys and experiments.
-                            </p>
-                        </div>
-                        <div class="info-content hire">
-                            <h2>WE'RE HIRING</h2>
-                            <p>Check our our hiring page for more info:</p>
-                            <button class="hire-button info-button">Hiring</button>
                         </div>
                     </div>
                 </section>

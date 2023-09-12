@@ -12,19 +12,33 @@
 </head>
     <body>
         <header>
-            <div class="header-logo">
-                <a href="/index.html"><img class="cc-logo" src="/Images/Icons/Logo.png" alt="Curiosity Center Logo"></a>
+            <div class="header-main-content">
+                <div class="header-logo">
+                    <a href="/index.html"><img class="cc-logo" src="/Images/Icons/Logo.png" alt="Curiosity Center Logo"></a>
+                </div>
+                <nav class="header-nav">
+                    <ul class="nav-items">
+                        <li><a href="/html/exhibits.html">Exhibits</a></li>
+                        <li><a href="/html/events.html">Events</a></li>
+                        <li><a href="/html/information.html">Information</a></li>
+                        <li><a href="/html/about.html">About</a></li>
+                    </ul>
+                <button class="tickets-button desktop-version" onclick="location.href='/html/tickets.html'" type="button">Tickets</button> 
+                </nav>
             </div>
-            <nav class="header-nav">
-               <ul class="nav-items">
-                <li><a href="/html/exhibits.html">Exhibits</a></li>
-                <li><a href="/html/events.html">Events</a></li>
-                <li><a href="/html/information.html">Information</a></li>
-                <li><a href="/html/about.html">About</a></li>
-               </ul>
-               <button class="tickets-button desktop-version" onclick="location.href='/html/tickets.html'" type="button">Tickets</button> 
-               <img class="hamburger-menu" src="/Images/Icons/hamburger-menu.png" alt=""> 
-            </nav>
+            <div class="hamburger-menu">
+                <input type="checkbox" name="hamburger" id="hamburger">
+                <label class="hamburger-label" for="hamburger"><img class="hamburger-icon" src="/Images/Icons/hamburger-menu.png" alt=""></label>
+                <nav class="hamburger-items">
+                    <ul class="hamburger-item-list">
+                        <a href="/html/exhibits.html"><li>EXHIBITS</li></a>
+                        <a href="/html/events.html"><li>EVENTS</li></a>
+                        <a href="/html/information.html"><li>INFORMATION</li></a>
+                        <a href="/html/about.html"><li>ABOUT</li></a>
+                        <a href="/html/tickets.html"><li>TICKETS</li></a>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main class="exhibit-template-main">
             <section class="exhibit-hero">
