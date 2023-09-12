@@ -3,7 +3,8 @@
 header {
     background-color: var(--light-background-color);
     width: 100%;
-    height: 100px;
+    height: auto;
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,8 +49,6 @@ header {
     width: 167px;
     height: 50px;
     font-size: 20px;
-    border: none;
-    border-radius: var(--border-radius);
     background-color: var(--button-red)
 }
 
@@ -57,12 +56,19 @@ header {
     background-color: #ECB390;
 }
 
-.hamburger-menu {
-    width: 37px;
-    height: 37px;
-    display: none;
-}
-
 .header-1199 {
     display: none;
 }
+
+
+.hamburger-items {
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 100%;
+}
+
+
+
+

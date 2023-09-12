@@ -11,6 +11,7 @@
     /* COLORS */
     --light-background-color:#FFFEF8;
     --dark-background-color: #343434;
+    --button-beige: #ECDFC8;
     --button-red: #DF7861;
 
     --img-gradient: rgba(0, 0, 0, 0.75),
@@ -20,6 +21,8 @@
 
     /* WIDTHS */
 
+    --content-width-big: 1097px;
+    --content-width-medium: 761px; 
     --event-west-width: 306px;
     --border-radius: 5px;
 
@@ -64,6 +67,11 @@
     width: 1098px;
     display: flex;
     flex-direction: column;
+}
+
+.homepage-content h2 {
+    font-weight: 500;
+    font-size: 25px;
 }
 
 .card-gap {
@@ -126,8 +134,9 @@
     margin: 64px auto;
 }
 
-.page-title {
-    width: 100%
+
+.exhibit-title {
+    max-width: 1100px;
 }
 
 .highlight-exhibit {
@@ -158,8 +167,6 @@
 .button-seemore {
     height: 50px;
     width: 219px;
-    border-radius: var(--border-radius);
-    border: 0;
     background: #ECDFC8;
     font-size: 20px;
 }
@@ -319,8 +326,7 @@ gap: 50px;
 /* EVENTS */
 
 
-.etc-width {
-    width: 1097px;
+.events-main {
     margin: 0 auto;
 }
 
@@ -404,8 +410,6 @@ gap: 50px;
     width: 200px;
     height: 100%;
     background-color: var(--light-background-color);
-    border-radius: var(--border-radius);
-    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,8 +437,6 @@ gap: 50px;
     width: 100%;
     height: 60px;
     font-size: 20px;
-    border: none;
-    border-radius: var(--border-radius);
 }
 
 .hours {
@@ -576,6 +578,9 @@ gap: 50px;
 
 /* Tickets */
 
+.tickets-main {
+    margin: 0 auto;
+}
 
 .tickets-cart {
     width: 100%;
@@ -734,6 +739,87 @@ gap: 50px;
   
 
 
+/* INFORMATION */
+
+.info-width {
+    width: 900px;
+}
+
+
+
+
+.information-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 64px auto;
+}
+
+.info-west {
+    display: flex;
+    gap: 99px;
+    width: 400px;
+}
+
+.info-cards, .info-visit-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+}
+
+.info-east {
+    display: flex;
+    flex-direction: column;
+    width: 400px
+}
+
+.hours-info {
+    height: 100%;
+}
+
+.info-contact {
+    display: flex;
+    gap: 0;
+}
+
+.info-content, .info-visit, .info-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.email-adresses {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-contact a {
+    display: inline-block;
+    width: auto;
+}
+
+.info-contact p {
+    font-weight: 400;
+}
+
+.contact-email {
+    font-size: 20px;
+}
+
+.info-content p {
+    font-size: 20px;
+}
+
+.info-button {
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+    background-color: var(--button-beige);
+
+}
+
 
 
 
@@ -773,7 +859,7 @@ gap: 50px;
     
 
     .highlight-exhibit {
-        width: 864px;
+
         justify-content: center;
         flex-direction: column-reverse;
         gap: 50px;
@@ -784,7 +870,7 @@ gap: 50px;
         gap: 64px;
     }
 
-    .etc-width {
+    .big-width, .info-width  {
         width: 80vw;
     }
 }
@@ -1091,9 +1177,6 @@ gap: 50px;
         max-height: 54px;
     }
     
-    .hamburger-menu {
-        display: block;
-    }
 
     .highlight-img {
         height: 200px;
@@ -1179,6 +1262,9 @@ gap: 50px;
         margin: 30px auto 50px;
     }
 
+    .homepage-content h2 {
+        font-size: 19px;
+    }
     .homepage-card-m-m {
         gap: 30px;
     }
@@ -1312,9 +1398,6 @@ gap: 50px;
         display: none;
     }
 
-    .hero-text {
-        left: 3%;
-    }
     
 }
 

@@ -32,7 +32,7 @@
         gap: 64px;
     }
 
-    .etc-width {
+    .big-width {
         width: 80vw;
     }
 }
@@ -247,10 +247,6 @@
 
     .cc-logo {
         max-height: 54px;
-    }
-    
-    .hamburger-menu {
-        display: block;
     }
 
     .highlight-img {

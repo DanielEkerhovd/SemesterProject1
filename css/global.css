@@ -37,9 +37,15 @@ h1, h2, h3 {
     color: white;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 button {
     color: black;
     cursor: pointer;
+    border-radius: var(--border-radius);
+    border: none;
 }
 
 .title-p {
@@ -50,6 +56,14 @@ button {
 
 img {
     object-fit: cover;
+}
+
+.big-width {
+    width: var(--content-width-big);
+}
+
+.medium-width {
+    width: var(--content-width-medium);
 }
 
 .divider {
