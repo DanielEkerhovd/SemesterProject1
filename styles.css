@@ -776,28 +776,10 @@ gap: 50px;
     width: 388px
 }
 
-#tooltip-class, #tooltip-family {
-    display: none;
-}
-
-.tooltip-label {
-    position: absolute;
-    right: 30%;
-    bottom: -10%;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-}
-
 .tooltip-school {
     right: -10%;
 }
 
-
-
-#tooltip-class:checked ~ .tooltip-text, #tooltip-family:checked ~ .tooltip-text  {
-    visibility: visible;
-}
 
 .ticket-tooltip:hover .tooltip-text {
     visibility: visible;
