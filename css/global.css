@@ -48,6 +48,10 @@ button {
     border: none;
 }
 
+button:active {
+    background-color: var(--button-beige);
+}
+
 .title-p {
     font-size: 25px;
     width: 90%;

@@ -358,6 +358,7 @@ gap: 50px;
 .calendar {
     width: 100%;
     height: 330px;
+    padding: 30px;
     margin-bottom: 12px;
     background-color: var(--light-background-color);
     border-radius: var(--border-radius);
@@ -366,24 +367,41 @@ gap: 50px;
     justify-content: center;
 }
 
-.calendar-phone {
-    display: flex;
-    gap: 20px ;
-    flex-direction: column;
+.calendar p {
+    color: black;
+    font-size: 18px;
+    letter-spacing: 0;
 }
 
-.calendar-phone > div {
-    width: 80vw;
-    height: 60px;
+.calendar-date {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.choose-date {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: var(--button-beige);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .wide-calendar {
     display: none;
     width: 100%;
     height: auto;
+    background-color: var(--light-background-color);
+    border-radius: var(--border-radius);
+    color: black ;
 }
 
 .calendar-wide {
@@ -428,10 +446,6 @@ gap: 50px;
 
 
 
-.calendar-phone img {
-    height: 30px;
-    width: 30px;
-}
 
 .calendar-button {
     background-color: var(--light-background-color);
@@ -445,7 +459,7 @@ gap: 50px;
 
 .hours {
     width: var(--event-west-width);
-    height: 228px;
+    height: 100%;
     background-color: var(--light-background-color);
     display: flex;
     flex-direction: column;
@@ -571,11 +585,6 @@ gap: 50px;
 .event-time-duration {
     font-weight: 300;
     font-size: 13px;
-}
-
-
-.calendar-phone {
-    display: none;
 }
 
 
@@ -767,19 +776,26 @@ gap: 50px;
     width: 388px
 }
 
-#tooltip-class {
+#tooltip-class, #tooltip-family {
     display: none;
 }
 
 .tooltip-label {
     position: absolute;
+    right: 30%;
+    bottom: -10%;
     width: 35px;
     height: 35px;
     cursor: pointer;
-    
 }
 
-#tooltip-class:checked ~ .tooltip-text {
+.tooltip-school {
+    right: -10%;
+}
+
+
+
+#tooltip-class:checked ~ .tooltip-text, #tooltip-family:checked ~ .tooltip-text  {
     visibility: visible;
 }
 
@@ -1077,13 +1093,12 @@ gap: 50px;
         margin-bottom: 50px;
     }
 
-    .hours-events {
+    .hours-events, .calendar-event  {
         height: 402px;
+        width: 100%;
     }
 
-    .calendar {
-        width: 545px;
-    }
+    
 
     .tickets-calendar {
         display: none;
@@ -1138,9 +1153,6 @@ gap: 50px;
 }
 
 @media (max-width: 919px) {
-    .hours-events {
-        display: none;
-    }
 
     .hours-info {
         width: 100%;
@@ -1332,16 +1344,6 @@ gap: 50px;
         text-align: center;
     }
 
-
-
-    .calendar-phone {
-        display: flex;
-    }
-
-    .calendar {
-        display: none;
-    }
-
     .info-button {
         width: 100%;
         height: 61px;
@@ -1407,6 +1409,14 @@ gap: 50px;
 
     .event-time {
         margin-left: 10px;
+    }
+
+    .hours-events {
+        display: none;
+    }
+
+    .calendar {
+        height: 200px;
     }
 
     .ticket-name {
@@ -1481,10 +1491,12 @@ gap: 50px;
     }
 
     .tooltip-text {
-        left: -300%;
+        right: -100%;
         bottom: 150%;
+        width: 200px
     }
 
+   
 }
 
 @media (max-width: 444px) {

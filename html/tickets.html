@@ -49,38 +49,12 @@
             <div class="tickets-content">
                 <section class="tickets-west">
 
-                    <div class="wide-calendar hide-749 show-1079">
-                        <div class="calendar-wide">
-                            <div></div>
+                    <div class="wide-calendar calendar show-1079">
+                        <div class="calendar-date">
+                            <label for="choose-date">DATE</label>
+                            <p>Choose date for tickets and availability</p>
+                            <input class="choose-date" type="date" id="choose-date">
                         </div>
-                        <button class="calendar-button" type="button">Back to today</button>
-                    </div>
-
-
-                    <div class="calendar-phone">
-                        <div class="calendar-phone-nav">
-                            <button class="date-button">
-                            <img src="/Images/Icons/back.png" alt="">
-                            </button>
-                            <div class="date-display date-month">
-                                <h3>September</h3>
-                            </div>
-                            <button class="date-button">
-                                <img class="flip" src="/Images/Icons/back.png" alt="">
-                            </button>
-                        </div>
-                        <div class="calendar-phone-nav">
-                            <button class="date-button">
-                            <img src="/Images/Icons/back.png" alt="">
-                            </button>
-                            <div class="date-display date-number">
-                                <h3>20</h3>
-                            </div>
-                            <button class="date-button">
-                                <img class="flip" src="/Images/Icons/back.png" alt="">
-                            </button>
-                        </div>
-                        <button class="calendar-button" type="button">Back to today</button>
                     </div>
                     
                     <div class="ticket-section tickets-kids">
@@ -153,6 +127,8 @@
                                     <p class="ticket-name">Family</p>
                                     <img class="info-logo" src="/Images/Icons/info-icon.png" alt="">
                                     <div class="ticket-tooltip">
+                                        <input type="checkbox" name="tooltip-family" id="tooltip-family">
+                                        <label class="tooltip-label" for="tooltip-family">                              <div class="tooltip-checkbox"></div></label>
                                         <span class="tooltip-text family-tooltip">Family ticket includes 2 adults and 2 kids.</span>
                                     </div>
                                 </div>
@@ -177,7 +153,7 @@
                                     <img class="info-logo" src="/Images/Icons/info-icon.png" alt="">
                                     <div class="ticket-tooltip">
                                         <input type="checkbox" name="tooltip-class" id="tooltip-class">
-                <label class="tooltip-label" for="tooltip-class"><div class="tooltip-checkbox"></div></label>
+                                        <label class="tooltip-label tooltip-school" for="tooltip-class">                              <div class="tooltip-checkbox"></div></label>
                                         <span class="tooltip-text">Valid for single school class, max 50 pupils and 2 teachers.</span>
                                     </div>
                                 </div>
@@ -200,20 +176,12 @@
                 <section class="tickets-east">
                     <div class="tickets-calendar">
                         <div class="calendar">
-                            <img src="/Images/Calendar.png" alt="">
-                        </div>
-                        <div class="calendar-phone">
-                            <button class="date-button">
-                                <img src="/Images/Icons/back.png" alt="">
-                            </button>
-                            <div class="date-display">
-                                <h3>WEEK 36</h3>
+                            <div class="calendar-date">
+                                <label for="choose-date">DATE</label>
+                                <p>Choose date for tickets and availability</p>
+                                <input class="choose-date" type="date" id="choose-date">
                             </div>
-                            <button class="date-button">
-                                <img class="flip" src="/Images/Icons/back.png" alt="">
-                            </button>
                         </div>
-                        <button class="calendar-button" type="button">Back to today</button>
                     </div>
                     <div class="tickets-cart">
                         <div class="cart-items">
@@ -242,7 +210,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="purchase-button" type="button">Purchase</button>
+                    <button class="purchase-button" type="button" onclick="location.href='/html/index.html'">Purchase</button>
                 </section>
             </div>
         </main>
