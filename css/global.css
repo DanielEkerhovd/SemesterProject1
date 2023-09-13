@@ -14,11 +14,8 @@ body {
     background-color: #1E1E1E;
 }
 
-:visited {
-    color: inherit;
-}
 
-a:visited, button:visited {
+a:visited, button:visited, a:link {
     color: inherit;
 }
 
