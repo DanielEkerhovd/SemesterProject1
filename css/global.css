@@ -77,6 +77,10 @@ img {
     background: #ECDFC8;
 }
 
+input {
+    color: black;
+}
+
 .divider-small {
     width: 80%;
     height: 2px;
