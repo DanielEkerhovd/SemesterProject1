@@ -738,6 +738,56 @@ gap: 50px;
 }
 
 
+.ticket-tooltip {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 17%;
+}
+
+.tooltip-text {
+    position: absolute;
+    visibility: hidden;
+    background-color: var(--button-beige);
+    border-radius: var(--border-radius);
+    width: 336px;
+    height: 80px;
+    bottom: 170%;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.family-tooltip {
+    width: 388px
+}
+
+#tooltip-class {
+    display: none;
+}
+
+.tooltip-label {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    
+}
+
+#tooltip-class:checked ~ .tooltip-text {
+    visibility: visible;
+}
+
+.ticket-tooltip:hover .tooltip-text {
+    visibility: visible;
+    
+}
+
 
 
   
@@ -819,12 +869,21 @@ gap: 50px;
     font-size: 20px;
 }
 
+.information-main h2 {
+    letter-spacing: 0.2rem;
+}
+
 .info-button {
-    width: 180px;
-    height: 40px;
+    width: 190px;
+    height: 50px;
     font-size: 16px;
     background-color: var(--button-beige);
+    font-size: 20px;
+    font-weight: 500;
+}
 
+.info-button:active {
+    background-color: #737373;
 }
 
 
@@ -1230,6 +1289,13 @@ gap: 50px;
         display: none;
     }
 
+    .tooltip-text {
+        width: 260px;
+        font-size: 15px;
+        padding: 10px;
+        
+    }
+
 
 
     /* EXHIBITS 749px */
@@ -1412,6 +1478,11 @@ gap: 50px;
 
     .tickets-cards {
         height: auto;
+    }
+
+    .tooltip-text {
+        left: -300%;
+        bottom: 150%;
     }
 
 }
