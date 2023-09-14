@@ -5,6 +5,7 @@
 @import url(/css/global.css);
 @import url(/css/header.css);
 @import url(/css/footer.css);
+@import url(/css/mq.css);
 
 :root {
 
@@ -28,7 +29,6 @@
 
 
 }
-
 
 /* HOMEPAGE */
 
@@ -204,8 +204,6 @@
     height: 202px;
     border-radius: var(--border-radius);
 }
-
-
 
 
 /* EXHIBIT TEMPLATE*/
@@ -441,12 +439,6 @@ gap: 50px;
     min-width: 140px;
 }
 
-
-
-
-
-
-
 .calendar-button {
     background-color: var(--light-background-color);
 }
@@ -477,8 +469,6 @@ gap: 50px;
     color: black;
     font-size: 20px;
 }
-
-
 
 .events-east {
     width: 589px;
@@ -587,9 +577,7 @@ gap: 50px;
     font-size: 13px;
 }
 
-
-
-/* Tickets */
+/* TICKETS */
 
 .tickets-main {
     margin: 0 auto;
@@ -684,7 +672,6 @@ gap: 50px;
     border-radius: var(--border-radius);
 }
 
-
 .tickets-west {
     width: 500px;
     height: auto;
@@ -692,7 +679,6 @@ gap: 50px;
     flex-direction: column;
     justify-content: space-between;
 }
-
 
 .ticket-section {
     display: flex;
@@ -780,15 +766,10 @@ gap: 50px;
     right: -10%;
 }
 
-
 .ticket-tooltip:hover .tooltip-text {
     visibility: visible;
     
 }
-
-
-
-  
 
 
 /* INFORMATION */
@@ -796,9 +777,6 @@ gap: 50px;
 .info-width {
     width: 900px;
 }
-
-
-
 
 .information-section {
     display: flex;
@@ -819,8 +797,6 @@ gap: 50px;
     flex-direction: column;
     gap: 66px;
 }
-
-
 
 .info-east {
     display: flex;
@@ -884,44 +860,22 @@ gap: 50px;
     background-color: #737373;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* MISC */
 
 .phone-version {
     display: none;
 }
 
+
+
 @media (max-width: 1299px) {
+
+    /* EXHIBIT 1299px */
 
     .exhibit-template  {
         width: 400px;
     }
-
-    .events-title {
-        max-width: 100%;
-    }
-
-
-    .highlight-img {
-        width: 100%;
-        max-height: 450px;
-        object-fit: cover;
-    }
     
-
     .highlight-exhibit {
 
         justify-content: center;
@@ -934,19 +888,31 @@ gap: 50px;
         gap: 64px;
     }
 
+    /* OTHER 1299px */
+
+    .events-title {
+        max-width: 100%;
+    }
+
+
+    .highlight-img {
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+    }
+    
+    /* MISC 1299px */
+
     .big-width  {
         width: 80vw;
     }
 }
-
-
 
 @media (max-width: 1199px) {
 
     .hide-1199 {
         display: none;
     }
-
 
     .cc-logo {
         width: 100%;
@@ -1056,7 +1022,6 @@ gap: 50px;
         
     }
 
-
     .exhibit-template p {
         width: 80%;
         max-width: 400px;
@@ -1079,8 +1044,6 @@ gap: 50px;
         height: 402px;
         width: 100%;
     }
-
-    
 
     .tickets-calendar {
         display: none;
@@ -1126,12 +1089,6 @@ gap: 50px;
     .show-1079 {
         display: block;
     }
-
-
-   
-
-
-
 }
 
 @media (max-width: 919px) {
@@ -1168,8 +1125,6 @@ gap: 50px;
     .info-title {
         text-align: center;
     }
-
-   
 }
 
 @media (max-width: 869px) {
@@ -1211,7 +1166,6 @@ gap: 50px;
         margin: 0;
     }
 
-    
     .m-img, .m-card {
         width: 500px;
         justify-content: center;
@@ -1222,8 +1176,6 @@ gap: 50px;
         margin: 0 auto;
     }
 
-    
-    
     .footer-content {
         width: 500px;
     }
@@ -1290,8 +1242,6 @@ gap: 50px;
         
     }
 
-
-
     /* EXHIBITS 749px */
 
     .exhibit-hero {
@@ -1332,7 +1282,6 @@ gap: 50px;
         font-size: 23px;
     }
 
-
     footer {
         height: 84px;
     }
@@ -1340,8 +1289,6 @@ gap: 50px;
 
 @media (max-width: 599px) {
 
-
-    
     .hero-img {
         height: 196px;
     }
@@ -1478,14 +1425,12 @@ gap: 50px;
         width: 200px
     }
 
-   
 }
 
 @media (max-width: 444px) {
     .remove-439 {
         display: none;
     }
-    
     
     .page-title {
         font-size: 14vw;
@@ -1519,8 +1464,6 @@ gap: 50px;
     .remove-400 {
         display: none;
     }
-
-    
 }
 
 @media (max-width: 347px) {
