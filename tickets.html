@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Daniel EKerhovd Lid">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/Images/Icons/curious-logo.png">
+
+    <title>Curiosity Center</title>
+</head>
+    <body>
+        <header>
+            <div class="header-main-content">
+                <div class="header-logo">
+                    <a href="/index.html"><img class="cc-logo" src="/Images/Icons/Logo.png" alt="Curiosity Center Logo"></a>
+                </div>
+                <nav class="header-nav">
+                    <ul class="nav-items">
+                        <li><a href="/exhibits.html">Exhibits</a></li>
+                        <li><a href="/events.html">Events</a></li>
+                        <li><a href="/information.html">Information</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                <button class="tickets-button desktop-version" onclick="location.href='/tickets.html'" type="button">Tickets</button> 
+                </nav>
+            </div>
+            <div class="hamburger-menu">
+                <input type="checkbox" name="hamburger" id="hamburger">
+                <label class="hamburger-label" for="hamburger"><img class="hamburger-icon" src="/Images/Icons/hamburger-menu.png" alt="Hamburger icon"></label>
+                <nav class="hamburger-items">
+                    <ul class="hamburger-item-list">
+                        <li><a href="/exhibits.html">EXHIBITS</a></li>
+                        <li><a href="/events.html">EVENTS</a></li>
+                        <li><a href="/information.html">INFORMATION</a></li>
+                        <li><a href="/about.html">ABOUT</a></li>
+                        <li><a href="/tickets.html">TICKETS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="tickets-main big-width">
+            <section class="tickets-section">
+                <h1 class="page-title tickets-title">TICKETS</h1>
+                <div class="tickets-content">
+                    <div class="tickets-west">
+                        <div class="wide-calendar calendar show-1079">
+                            <div class="calendar-date">
+                                <label for="choose-date-phone">DATE</label>
+                                <p>Choose date for tickets and availability</p>
+                                <input class="choose-date" type="date" id="choose-date-phone">
+                            </div>
+                        </div>
+                        <div class="ticket-section tickets-kids">
+                            <h2 class="tickets-content-title">KIDS</h2>
+                            <div class="tickets-cards">
+                                <div class="ticket-card-content">
+                                    <p class="ticket-name">Kids</p>
+                                    <div class="ticket-card-right">
+                                        <p class="price-per">12$/<span class="price-small">per</span></p>
+                                        <div class="ticket-buttons">
+                                            <input class="item-add" type="image" src="/Images/Icons/plus-button.png" alt="Submit"/>
+                                            <p class="ticket-amount">2</p>
+                                            <input class="item-remove" type="image" src="/Images/Icons/minus-button.png" alt="Submit"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tickets-cards">
+                                <div class="ticket-card-content">
+                                    <p class="ticket-name">Kids 0-3</p>
+                                    <div class="ticket-card-right">
+                                        <p class="price-per">0$/<span class="price-small">per</span></p>
+                                        <div class="ticket-buttons">
+                                            <input class="item-add" type="image" src="/Images/Icons/plus-button.png" alt="Submit"/>
+                                            <p class="ticket-amount">0</p>
+                                            <input class="item-remove" type="image" src="/Images/Icons/minus-button.png" alt="Submit"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tickets-cards">
+                                <div class="ticket-card-content">
+                                    <p class="ticket-name">Teens 13-17</p>
+                                    <div class="ticket-card-right">
+                                        <p class="price-per">15$/<span class="price-small">per</span></p>
+                                        <div class="ticket-buttons">
+                                            <input class="item-add" type="image" src="/Images/Icons/plus-button.png" alt="Submit"/>
+                                            <p class="ticket-amount">0</p>
+                                            <input class="item-remove" type="image" src="/Images/Icons/minus-button.png" alt="Submit"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-section tickets-adults">
+                            <h2 class="tickets-content-title">ADULTS</h2>
+                            <div class="tickets-cards">
+                                <div class="ticket-card-content">
+                                    <p class="ticket-name">Adults</p>
+                                    <div class="ticket-card-right">
+                                        <p class="price-per">20$/<span class="price-small">per</span></p>
+                                        <div class="ticket-buttons">
+                                            <input class="item-add" type="image" src="/Images/Icons/plus-button.png" alt="Submit"/>
+                                            <p class="ticket-amount">1</p>
+                                            <input class="item-remove" type="image" src="/Images/Icons/minus-button.png" alt="Submit"/>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-section tickets-adults">
+                            <h2 class="tickets-content-title">FAMILY</h2>
+                            <div class="tickets-cards">
+                                <div class="ticket-card-content">
+                                    <div class="name-info">
+                                        <p class="ticket-name">Family</p>
+                                        <img class="info-logo" src="/Images/Icons/info-icon.png" alt="Info icon">
+                                        <div class="ticket-tooltip">
+                                            <span class="tooltip-text family-tooltip">Family ticket includes 2 adults and 2 kids.</span>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-card-right">
+                                        <p class="price-per">55$/<span class="price-small">per</span></p>
+                                        <div class="ticket-buttons">
+                                            <input class="item-add" type="image" src="/Images/Icons/plus-button.png" alt="Submit"/>
+                                            <p class="ticket-amount">0</p>
+                                            <input class="item-remove" type="image" src="/Images/Icons/minus-button.png" alt="Submit"/>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-section tickets-adults">
+                            <h2 class="tickets-content-title">SCHOOL TICKETS</h2>
+                            <div class="tickets-cards">
+                                <div class="ticket-card-content">
+                                    <div class="name-info">
+                                        <p class="ticket-name">School Class</p>
+                                        <img class="info-logo" src="/Images/Icons/info-icon.png" alt="Info icon">
+                                        <div class="ticket-tooltip">
+                                            <span class="tooltip-text">Valid for single school class, max 50 pupils and 2 teachers.</span>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-card-right">
+                                        <p class="price-per">200$/<span class="price-small">per</span></p>
+                                        <div class="ticket-buttons">
+                                            <input class="item-add" type="image" src="/Images/Icons/plus-button.png" alt="Submit"/>
+                                            <p class="ticket-amount">0</p>
+                                            <input class="item-remove" type="image" src="/Images/Icons/minus-button.png" alt="Submit"/>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tickets-east">
+                        <div class="tickets-calendar">
+                            <div class="calendar">
+                                <div class="calendar-date">
+                                    <label for="choose-date">DATE</label>
+                                    <p>Choose date for tickets and availability</p>
+                                    <input class="choose-date" type="date" id="choose-date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tickets-cart">
+                            <div class="cart-items">
+                                <div class="cart-item">
+                                    <p class="item-name">Kids</p>
+                                    <div class="item-right">
+                                        <p class="item-amount">x2</p>
+                                        <p class="item-cost">24$</p>
+                                        <input class="item-remove" type="image" src="/Images/Icons/minus-button.png" alt="Submit"/>
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <p class="item-name">Adults</p>
+                                    <div class="item-right">
+                                        <p class="item-amount">x1</p>
+                                        <p class="item-cost">20$</p>
+                                        <input class="item-remove" type="image" src="/Images/Icons/minus-button.png" alt="Submit"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-subtotal">
+                                <div class="divider card-divider"></div>
+                                <div class="subtotal">
+                                    <p>Total:</p>
+                                    <p class="subtotal-price">44$</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="purchase-button" type="button" onclick="location.href='/index.html'">Purchase</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <img class="footer-logo" src="/Images/Icons/Logo.png" alt="Curiosity Logo">
+                <p class="hide-1199"><span class="bold">Museumsgata 32</span><br>4007,Stavanger<br>Norway</p>
+                <nav class="SoMe">
+                    <a href=""><img class="SoMe-icon remove-400" src="/Images/Icons/facebook-icon.png" alt="Facebook Icon"></a>
+                    <a href=""><img class="SoMe-icon remove-339" src="/Images/Icons/instagram-icon.png" alt="Instagram Icon"></a>
+                    <a href=""><img class="SoMe-icon remove-339" src="/Images/Icons/tiktok-icon.png" alt="Tiktok Icon"></a>
+                    <a href=""><img class="SoMe-icon remove-439" src="/Images/Icons/youtube-logo.png" alt="Youtube Icon"></a>
+                </nav>
+            </div>
+        </footer>
+    </body>
+<>
