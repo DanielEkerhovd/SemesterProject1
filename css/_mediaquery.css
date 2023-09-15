@@ -1,0 +1,595 @@
+
+@media (max-width: 1299px) {
+
+    .exhibit-template  {
+        width: 400px;
+    }
+    
+    .highlight-exhibit {
+
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .exhibits {
+        justify-content: center;
+        gap: 64px;
+    }
+
+    .events-title {
+        max-width: 100%;
+    }
+
+    .highlight-img {
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+    }
+
+    .big-width  {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .cc-logo {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .s-img, .s-card {
+        justify-content: center;
+        width: 181px
+    }
+    
+    .m-img, .m-card {
+        width: 387px;
+        justify-content: center;
+    }
+    
+    .xl-img, .xl-card {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .homepage-content {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .homepage-card-s-s-m, .homepage-card-m-m {
+        width: 800px;
+        justify-content: space-between;
+    }
+
+    .information-width {
+        width: 600px;
+        margin: 64px auto;
+    }
+
+    .exhibit-content-head, .information-layout {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information-layout {
+        gap: 100px;
+    }
+
+    .information, .img-flip {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .exhibit-content-head h1 {
+        font-size: 36px;
+    }
+
+    .title-p {
+        font-size: 23px;
+        width: 100%;
+    }
+
+    .information-img {
+        width: 80%;
+        height: 200px;
+    }
+
+    .information-content {
+        gap: 30px;
+    }
+
+    .events-east {
+        width: 500px;
+    }
+
+    .align-right {
+        text-align: start;
+        align-items: start;
+    }
+
+    .footer-content {
+        width: 800px;
+    } 
+    
+    .hide-1199 {
+        display: none;
+    }
+}
+
+@media (max-width: 1131px) {
+    .header-logo, .header-nav  {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1079px) {
+    .exhibit-template, .highlight-exhibit {
+        width: 80vw;
+    }
+
+    .exhibit-img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .highlight-content p {
+        max-width: 489px;
+        width: 80%;
+        
+    }
+
+    .exhibit-template p {
+        width: 80%;
+        max-width: 400px;
+    } 
+
+    .events-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events-west, .tickets-east {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .hours-events, .calendar-event  {
+        height: 402px;
+        width: 100%;
+    }
+
+    .tickets-calendar {
+        display: none;
+    }
+
+    .events-east {
+        width: 100%;
+    }
+
+    .tickets-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .tickets-east {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .tickets-west {
+        gap: 40px;
+    }
+
+    .tickets-west, .tickets-east, .tickets-title {
+        width: 80vw;
+    }
+
+    .tickets-cart {
+        align-items: center;
+    }
+
+    .cart-items, .cart-subtotal {
+        width: 100%;
+        max-width: 400px;
+
+
+    }
+
+    .info-width {
+        width: 70vw;
+    }
+    .show-1079 {
+        display: block;
+    }
+}
+
+@media (max-width: 919px) {
+
+    .hours-info {
+        width: 100%;
+        height: 200px;
+    }
+
+    .events-title {
+        text-align: center;
+    }
+
+    .events-content {
+        margin: 0 auto 64px;;
+    }
+
+    .events-calendar, .calendar, .tickets-calendar {
+        width: 100%;
+    }
+
+    .information-section {
+        flex-direction: column-reverse;
+    }
+
+    .info-east {
+        flex-direction: column-reverse;
+    }
+
+    .information-section section {
+        width: 100%;
+    }
+
+    .info-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 869px) {
+
+    .hero-img {
+        height: 300px;
+    }
+    
+    .tickets-button {
+        width: 500px;
+        height: 60px;
+    }
+
+    .homepage-content  {
+        margin: 52px auto;
+    }
+
+    .hp-card-backg {
+        justify-content: center;
+    }
+
+    .homepage-card-s {
+        display: none;
+    }
+    
+    .homepage-card-s-s-m {
+        width: 500px;
+    }
+    .homepage-card-m-m {
+        width: 500px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 52px;
+    }
+    .card-indent {
+        margin: 0;
+    }
+
+    .m-img, .m-card {
+        width: 500px;
+        justify-content: center;
+    }
+    
+    .xl-img, .xl-card {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        width: 500px;
+    }
+    
+    .footer-logo {
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+
+    .SoMe-icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .phone-version {
+        display: block;
+    }
+
+    .desktop-version {
+        display: none;
+    }
+
+}
+
+@media (max-width: 749px) {
+
+    .header-logo {
+        width: 259px;
+    }
+
+    .cc-logo {
+        max-height: 54px;
+    }
+    
+    .hamburger-icon {
+        display: block;
+    }
+
+    .highlight-img {
+        height: 200px;
+    }
+
+    .exhibit-img {
+        width: 100%;
+    }
+
+    .button-seemore {
+        width: 80vw;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .hide-749 {
+        display: none;
+    }
+
+    .tooltip-text {
+        width: 260px;
+        font-size: 15px;
+        padding: 10px;
+        
+    }
+
+    .exhibit-hero {
+        height: 200px;
+    }
+
+    .exhibit-content-head, .information-width {
+        width: 80vw;
+    }
+
+    .exhibit-content-head {
+        margin-bottom: 50px;
+    }
+
+    .information-layout {
+        gap: 70px;
+    }
+
+    .exhibit-content-head h1 {
+        letter-spacing: 0;
+    }
+
+    .divider {
+        width: 100%;
+    }
+
+    .card-divider {
+        width: 90%;
+    }
+
+    .tickets-title {
+        text-align: center;
+    }
+
+    .info-button {
+        width: 100%;
+        height: 61px;
+        font-size: 23px;
+    }
+
+    footer {
+        height: 84px;
+    }
+}
+
+@media (max-width: 599px) {
+
+    .hero-img {
+        height: 196px;
+    }
+
+    .homepage-content {
+        margin: 30px auto 50px;
+    }
+
+    .homepage-content h2 {
+        font-size: 19px;
+    }
+    .homepage-card-m-m {
+        gap: 30px;
+    }
+
+    .homepage-content div, .homepage-content button, .homepage-content img {
+        width: 80vw;
+    }
+
+    .homepage-content img {
+        height: 150px;
+    }
+
+    .hp-card-backg p {
+        font-size: 17px;
+    }
+
+    .hp-card-backg {
+        height: 35px;
+    }
+
+    .card-gap {
+        margin-bottom: 30px;
+    }
+
+    .highlight-content h2 {
+        font-size: 5.6vw;
+    }
+
+    .information-text, .information-img {
+        width: 100%;
+    }
+
+    .event-card-time {
+        width: 100px;
+    }
+
+    .event-time {
+        margin-left: 10px;
+    }
+
+    .hours-events {
+        display: none;
+    }
+
+    .calendar {
+        height: 200px;
+    }
+
+    .ticket-name {
+        font-size: 18px;
+    }
+
+    .info-title {
+        font-size: 8vw;
+        width: 70vw;
+    }
+
+    .footer-content {
+        width: 90%;
+    }
+
+    .footer-logo {
+        width: 200px;
+        height: 40px;
+    }
+
+    .SoMe {
+        gap: 15px;
+    }
+
+    .SoMe-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .exhibit-content-head h1 {
+        font-size: 6.3vw;
+        white-space: nowrap;
+        letter-spacing: 0;
+    }
+
+    .title-p, .about-goals-text, .exhibit-template p {
+        font-size: 4.2vw;
+    }
+
+    .information-title, .about-goals-title {
+        font-size: 4.4vw;
+        
+    }
+
+    .information-text {
+        font-size: 4vw;
+    }
+
+    .information-img {
+        height: 150px;
+    }
+}
+
+@media(max-width: 511px) {
+
+    .ticket-card-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .ticket-card-right {
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tickets-cards {
+        height: auto;
+    }
+
+    .tooltip-text {
+        right: -100%;
+        bottom: 150%;
+        width: 200px
+    }
+
+}
+
+@media (max-width: 444px) {
+    .remove-439 {
+        display: none;
+    }
+    
+    .page-title {
+        font-size: 14vw;
+    }
+    .info-title {
+        font-size: 8vw;
+        width: 70vw;
+        letter-spacing: 5px;
+    }
+
+    .exhibit-content p {
+        font-size: 4vw;
+    }
+
+    .button-seemore {
+        font-size: 5vw;
+    }
+
+    .hamburger-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hamburger-label {
+        top: 3.8%
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .remove-400 {
+        display: none;
+    }
+}
+
+@media (max-width: 347px) {
+    .remove-339 {
+        display: none;
+    }
+
+    .footer-content {
+        justify-content: center;
+    }
+
+    .SoMe {
+        display: block
+    }
+}

@@ -30,6 +30,11 @@ p {
     font-size: 22px;
 }
 
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 8px;;
+}
+
 .px20{
     font-size: 20px;
 }

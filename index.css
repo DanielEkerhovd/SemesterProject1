@@ -1,0 +1,31 @@
+
+/*IMPORTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url(/css/_global.css);
+@import url(/css/_header.css);
+@import url(/css/_footer.css);
+@import url(/css/_styles.css);
+@import url(/css/_mediaquery.css);
+
+
+:root {
+
+    /* COLORS */
+    --light-background-color:#FFFEF8;
+    --dark-background-color: #343434;
+    --button-beige: #ECDFC8;
+    --button-red: #DF7861;
+
+    --img-gradient: rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.75);
+    --img-hero-gradient: rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.35);
+
+    /* WIDTHS */
+
+    --content-width-big: 1097px;
+    --content-width-medium: 761px; 
+    --event-west-width: 306px;
+    --border-radius: 5px;
+}
