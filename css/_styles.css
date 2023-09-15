@@ -431,8 +431,9 @@ gap: 50px;
     border-radius: var(--border-radius);
 
 }
-.hours h3 {
+.hours h2 {
     color: black;
+    letter-spacing: 0;
 }
 .open-hours p {
     color: black;
@@ -816,7 +817,7 @@ gap: 50px;
     font-size: 20px;
 }
 
-.information-main h2 {
+.info-cards h2, .info-visit-contact h2 {
     letter-spacing: 0.2rem;
 }
 
