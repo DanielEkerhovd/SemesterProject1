@@ -1,6 +1,6 @@
 # CURIOSITY CENTER
 
-![image](/Images/Logo.png)
+![image](/Images/Icons/curiositycenter-logo.png)
 
 A static website for a interactive science museum, appealing to the young and their families.
 
